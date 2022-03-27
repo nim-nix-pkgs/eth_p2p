@@ -11,6 +11,7 @@
   inputs.src-eth_p2p-master.ref   = "refs/heads/master";
   inputs.src-eth_p2p-master.owner = "status-im";
   inputs.src-eth_p2p-master.repo  = "nim-eth-p2p";
+  inputs.src-eth_p2p-master.dir   = "";
   inputs.src-eth_p2p-master.type  = "github";
   
   inputs."rlp".owner = "nim-nix-pkgs";
