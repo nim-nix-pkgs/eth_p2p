@@ -11,7 +11,6 @@
   inputs.src-eth_p2p-master.ref   = "refs/heads/master";
   inputs.src-eth_p2p-master.owner = "status-im";
   inputs.src-eth_p2p-master.repo  = "nim-eth-p2p";
-  inputs.src-eth_p2p-master.dir   = "";
   inputs.src-eth_p2p-master.type  = "github";
   
   inputs."rlp".owner = "nim-nix-pkgs";
@@ -78,13 +77,13 @@
   inputs."chronicles".inputs.nixpkgs.follows = "nixpkgs";
   inputs."chronicles".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."asyncdispatch2".owner = "nim-nix-pkgs";
-  inputs."asyncdispatch2".ref   = "master";
-  inputs."asyncdispatch2".repo  = "asyncdispatch2";
-  inputs."asyncdispatch2".dir   = "";
-  inputs."asyncdispatch2".type  = "github";
-  inputs."asyncdispatch2".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."asyncdispatch2".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."chronos".owner = "nim-nix-pkgs";
+  inputs."chronos".ref   = "master";
+  inputs."chronos".repo  = "chronos";
+  inputs."chronos".dir   = "master";
+  inputs."chronos".type  = "github";
+  inputs."chronos".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."chronos".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."eth_common".owner = "nim-nix-pkgs";
   inputs."eth_common".ref   = "master";
@@ -94,13 +93,13 @@
   inputs."eth_common".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eth_common".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."snappy".owner = "nim-nix-pkgs";
-  inputs."snappy".ref   = "master";
-  inputs."snappy".repo  = "snappy";
-  inputs."snappy".dir   = "";
-  inputs."snappy".type  = "github";
-  inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."nim-snappy".owner = "nim-nix-pkgs";
+  inputs."nim-snappy".ref   = "master";
+  inputs."nim-snappy".repo  = "nim-snappy";
+  inputs."nim-snappy".dir   = "master";
+  inputs."nim-snappy".type  = "github";
+  inputs."nim-snappy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nim-snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."package_visible_types".owner = "nim-nix-pkgs";
   inputs."package_visible_types".ref   = "master";
