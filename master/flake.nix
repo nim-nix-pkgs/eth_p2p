@@ -93,13 +93,13 @@
   inputs."eth_common".inputs.nixpkgs.follows = "nixpkgs";
   inputs."eth_common".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."nim-snappy".owner = "nim-nix-pkgs";
-  inputs."nim-snappy".ref   = "master";
-  inputs."nim-snappy".repo  = "nim-snappy";
-  inputs."nim-snappy".dir   = "master";
-  inputs."nim-snappy".type  = "github";
-  inputs."nim-snappy".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."nim-snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."snappy".owner = "nim-nix-pkgs";
+  inputs."snappy".ref   = "master";
+  inputs."snappy".repo  = "snappy";
+  inputs."snappy".dir   = "master";
+  inputs."snappy".type  = "github";
+  inputs."snappy".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."snappy".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."package_visible_types".owner = "nim-nix-pkgs";
   inputs."package_visible_types".ref   = "master";
