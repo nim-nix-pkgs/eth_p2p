@@ -7,7 +7,7 @@
   "license": "Apache License 2.0",
   "web": "https://github.com/status-im/nim-eth-p2p",
   "refs": [
-    "fatal: unable to access 'https://github.com/status-im/nim-eth-p2p/': Could not resolve host: github.com",
+    "fatal: unable to access 'https://github.com/status-im/nim-eth-p2p/': Couldn't connect to server",
     ""
   ],
   "heads": []
