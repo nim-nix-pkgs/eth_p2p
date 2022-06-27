@@ -3,6 +3,7 @@
     "bearssl": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -11,6 +12,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -41,10 +43,12 @@
     "bearssl_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronos",
           "nixpkgs"
         ],
@@ -71,6 +75,7 @@
     "bearssl_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -78,6 +83,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -107,12 +113,14 @@
     "bearssl_4": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -141,12 +149,14 @@
     "bearssl_5": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -175,9 +185,11 @@
     "byteutils": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-byteutils-master": "src-byteutils-master"
@@ -202,10 +214,12 @@
     "byteutils_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "nixpkgs"
         ],
@@ -231,10 +245,12 @@
     "chronicles": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "json_serialization": "json_serialization",
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-chronicles-v0_10_2": "src-chronicles-v0_10_2",
@@ -261,6 +277,7 @@
       "inputs": {
         "bearssl": "bearssl",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -269,6 +286,7 @@
         ],
         "httputils": "httputils",
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -299,10 +317,12 @@
       "inputs": {
         "bearssl": "bearssl_2",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "httputils": "httputils_2",
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-chronos-master": "src-chronos-master_2",
@@ -330,6 +350,7 @@
       "inputs": {
         "bearssl": "bearssl_3",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -337,6 +358,7 @@
         ],
         "httputils": "httputils_3",
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -366,12 +388,14 @@
       "inputs": {
         "bearssl": "bearssl_4",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "flakeNimbleLib"
         ],
         "httputils": "httputils_4",
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "nixpkgs"
@@ -401,12 +425,14 @@
       "inputs": {
         "bearssl": "bearssl_5",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "flakeNimbleLib"
         ],
         "httputils": "httputils_5",
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "nixpkgs"
@@ -437,10 +463,12 @@
         "byteutils": "byteutils_2",
         "eth_trie": "eth_trie",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_2",
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "ranges": "ranges_3",
@@ -468,10 +496,12 @@
     "eth_keys": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_3",
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "secp256k1": "secp256k1",
@@ -494,14 +524,57 @@
         "type": "github"
       }
     },
+    "eth_p2p-master": {
+      "inputs": {
+        "byteutils": "byteutils",
+        "chronicles": "chronicles",
+        "chronos": "chronos_2",
+        "eth_common": "eth_common",
+        "eth_keys": "eth_keys",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "json_serialization": "json_serialization_2",
+        "nimcrypto": "nimcrypto_5",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "package_visible_types": "package_visible_types",
+        "ranges": "ranges_5",
+        "rlp": "rlp_3",
+        "secp256k1": "secp256k1_2",
+        "serialization": "serialization_3",
+        "snappy": "snappy",
+        "src-eth_p2p-master": "src-eth_p2p-master",
+        "stint": "stint_2"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1652367082,
+        "narHash": "sha256-ncb5q0nah8esF6jG2BvqCwFqhsOErGuMJLDd8QnATPg=",
+        "owner": "nim-nix-pkgs",
+        "repo": "eth_p2p",
+        "rev": "f32467dc05cb65a7e3c691fff0cfe3b2956ade38",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "eth_p2p",
+        "type": "github"
+      }
+    },
     "eth_trie": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto",
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "nixpkgs"
         ],
@@ -531,12 +604,14 @@
       "inputs": {
         "chronos": "chronos",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -568,11 +643,13 @@
       "inputs": {
         "chronos": "chronos_3",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "nixpkgs"
@@ -603,10 +680,12 @@
       "inputs": {
         "chronos": "chronos_4",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "nixpkgs"
         ],
@@ -636,10 +715,12 @@
       "inputs": {
         "chronos": "chronos_5",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "nixpkgs"
         ],
@@ -689,6 +770,7 @@
     "httputils": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -697,6 +779,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -728,10 +811,12 @@
     "httputils_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronos",
           "nixpkgs"
         ],
@@ -759,6 +844,7 @@
     "httputils_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -766,6 +852,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -796,12 +883,14 @@
     "httputils_4": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -831,12 +920,14 @@
     "httputils_5": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -866,10 +957,12 @@
     "json_serialization": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "nixpkgs"
         ],
@@ -897,9 +990,11 @@
     "json_serialization_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "serialization": "serialization_2",
@@ -926,11 +1021,13 @@
     "nimcrypto": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "nixpkgs"
@@ -957,10 +1054,12 @@
     "nimcrypto_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "nixpkgs"
         ],
@@ -986,10 +1085,12 @@
     "nimcrypto_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_keys",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_keys",
           "nixpkgs"
         ],
@@ -1015,11 +1116,13 @@
     "nimcrypto_4": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_keys",
           "secp256k1",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_keys",
           "secp256k1",
           "nixpkgs"
@@ -1046,9 +1149,11 @@
     "nimcrypto_5": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-nimcrypto-master": "src-nimcrypto-master_5"
@@ -1073,10 +1178,12 @@
     "nimcrypto_6": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "secp256k1",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "secp256k1",
           "nixpkgs"
         ],
@@ -1101,8 +1208,9 @@
     },
     "nixpkgs": {
       "locked": {
-        "narHash": "sha256-sK1Ow//80EKE3bAF5d+2gB8vPXw6m5TBk3wSLHvdVe0=",
-        "path": "/nix/store/0yqgkbpmsk7ck4s34wk505sfdd9vils4-source",
+        "lastModified": 0,
+        "narHash": "sha256-BBeCZwZImtjP3oYy4WogkQYy5OxNyfNciVSc1AfZgLQ=",
+        "path": "/nix/store/z8fi1f38y14lmsyhnph1l98qr3r9x7wr-source",
         "type": "path"
       },
       "original": {
@@ -1113,9 +1221,11 @@
     "package_visible_types": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-package_visible_types-master": "src-package_visible_types-master"
@@ -1140,11 +1250,13 @@
     "ranges": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "nixpkgs"
@@ -1171,12 +1283,14 @@
     "ranges_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rlp",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rlp",
@@ -1204,10 +1318,12 @@
     "ranges_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "nixpkgs"
         ],
@@ -1233,11 +1349,13 @@
     "ranges_4": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "rlp",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "rlp",
           "nixpkgs"
@@ -1264,9 +1382,11 @@
     "ranges_5": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-ranges-master": "src-ranges-master_5"
@@ -1291,10 +1411,12 @@
     "ranges_6": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "rlp",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "rlp",
           "nixpkgs"
         ],
@@ -1320,11 +1442,13 @@
     "rlp": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "nixpkgs"
@@ -1352,10 +1476,12 @@
     "rlp_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "nixpkgs"
         ],
@@ -1382,9 +1508,11 @@
     "rlp_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "ranges": "ranges_6",
@@ -1410,11 +1538,13 @@
     "rocksdb": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "nixpkgs"
@@ -1442,33 +1572,21 @@
     },
     "root": {
       "inputs": {
-        "byteutils": "byteutils",
-        "chronicles": "chronicles",
-        "chronos": "chronos_2",
-        "eth_common": "eth_common",
-        "eth_keys": "eth_keys",
+        "eth_p2p-master": "eth_p2p-master",
         "flakeNimbleLib": "flakeNimbleLib",
-        "json_serialization": "json_serialization_2",
-        "nimcrypto": "nimcrypto_5",
-        "nixpkgs": "nixpkgs",
-        "package_visible_types": "package_visible_types",
-        "ranges": "ranges_5",
-        "rlp": "rlp_3",
-        "secp256k1": "secp256k1_2",
-        "serialization": "serialization_3",
-        "snappy": "snappy",
-        "src-eth_p2p-master": "src-eth_p2p-master",
-        "stint": "stint_2"
+        "nixpkgs": "nixpkgs"
       }
     },
     "secp256k1": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_keys",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_4",
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_keys",
           "nixpkgs"
         ],
@@ -1495,10 +1613,12 @@
     "secp256k1_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nimcrypto": "nimcrypto_6",
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-secp256k1-master": "src-secp256k1-master_2",
@@ -1525,11 +1645,13 @@
       "inputs": {
         "faststreams": "faststreams",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "nixpkgs"
@@ -1559,10 +1681,12 @@
       "inputs": {
         "faststreams": "faststreams_2",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "nixpkgs"
         ],
@@ -1591,9 +1715,11 @@
       "inputs": {
         "faststreams": "faststreams_3",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-serialization-master": "src-serialization-master_3",
@@ -1621,9 +1747,11 @@
       "inputs": {
         "faststreams": "faststreams_4",
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-snappy-master": "src-snappy-master",
@@ -3588,6 +3716,7 @@
     "stew": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -3597,6 +3726,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -3627,6 +3757,7 @@
     "stew-master": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -3634,6 +3765,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -3662,11 +3794,13 @@
     "stew_10": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_keys",
           "secp256k1",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_keys",
           "secp256k1",
           "nixpkgs"
@@ -3693,6 +3827,7 @@
     "stew_11": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -3701,6 +3836,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -3730,6 +3866,7 @@
     "stew_12": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -3737,6 +3874,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -3765,12 +3903,14 @@
     "stew_13": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -3798,11 +3938,13 @@
     "stew_14": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "nixpkgs"
@@ -3829,10 +3971,12 @@
     "stew_15": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "nixpkgs"
         ],
@@ -3858,10 +4002,12 @@
     "stew_16": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "secp256k1",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "secp256k1",
           "nixpkgs"
         ],
@@ -3887,6 +4033,7 @@
     "stew_17": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -3894,6 +4041,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -3922,12 +4070,14 @@
     "stew_18": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -3955,11 +4105,13 @@
     "stew_19": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "nixpkgs"
@@ -3986,6 +4138,7 @@
     "stew_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -3994,6 +4147,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -4023,10 +4177,12 @@
     "stew_20": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "nixpkgs"
         ],
@@ -4052,6 +4208,7 @@
     "stew_21": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -4059,6 +4216,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -4087,12 +4245,14 @@
     "stew_22": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -4120,11 +4280,13 @@
     "stew_23": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "nixpkgs"
@@ -4151,10 +4313,12 @@
     "stew_24": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "nixpkgs"
         ],
@@ -4180,10 +4344,12 @@
     "stew_25": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "stint",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "stint",
           "nixpkgs"
         ],
@@ -4209,6 +4375,7 @@
     "stew_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -4216,6 +4383,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -4244,12 +4412,14 @@
     "stew_4": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -4277,11 +4447,13 @@
     "stew_5": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "nixpkgs"
@@ -4308,11 +4480,13 @@
     "stew_6": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronos",
           "httputils",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronos",
           "httputils",
           "nixpkgs"
@@ -4339,10 +4513,12 @@
     "stew_7": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronos",
           "nixpkgs"
         ],
@@ -4368,12 +4544,14 @@
     "stew_8": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4399,11 +4577,13 @@
     "stew_9": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "stint",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "stint",
           "nixpkgs"
@@ -4430,10 +4610,12 @@
     "stint": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "nixpkgs"
         ],
@@ -4460,9 +4642,11 @@
     "stint_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "nixpkgs"
         ],
         "src-stint-master": "src-stint-master_2",
@@ -4488,12 +4672,14 @@
     "tempfile": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4526,6 +4712,7 @@
     "tempfile-0_1_5": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4533,6 +4720,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4561,6 +4749,7 @@
     "tempfile-0_1_6": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4568,6 +4757,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4596,6 +4786,7 @@
     "tempfile-0_1_7": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4603,6 +4794,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4631,6 +4823,7 @@
     "tempfile-master": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4638,6 +4831,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4666,6 +4860,7 @@
     "tempfile-v0_1_1": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4673,6 +4868,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4701,6 +4897,7 @@
     "tempfile-v0_1_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4708,6 +4905,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4736,6 +4934,7 @@
     "tempfile-v0_1_4": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4743,6 +4942,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4771,6 +4971,7 @@
     "tempfile-v_0_1_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4778,6 +4979,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "eth_common",
           "eth_trie",
           "rocksdb",
@@ -4806,6 +5008,7 @@
     "testutils": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -4813,6 +5016,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -4841,10 +5045,12 @@
     "testutils_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "nixpkgs"
         ],
@@ -4870,12 +5076,14 @@
     "testutils_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -4903,11 +5111,13 @@
     "testutils_4": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "nixpkgs"
@@ -4935,11 +5145,13 @@
     "testutils_5": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "nixpkgs"
@@ -4967,6 +5179,7 @@
     "unittest2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -4976,6 +5189,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -5006,12 +5220,14 @@
     "unittest2_10": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -5039,11 +5255,13 @@
     "unittest2_11": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "nixpkgs"
@@ -5070,6 +5288,7 @@
     "unittest2_12": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -5077,6 +5296,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -5105,6 +5325,7 @@
     "unittest2_13": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -5112,6 +5333,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -5140,12 +5362,14 @@
     "unittest2_14": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "chronos",
@@ -5173,12 +5397,14 @@
     "unittest2_15": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "testutils",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "testutils",
@@ -5206,11 +5432,13 @@
     "unittest2_16": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "faststreams",
           "nixpkgs"
@@ -5237,10 +5465,12 @@
     "unittest2_17": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "serialization",
           "nixpkgs"
         ],
@@ -5266,6 +5496,7 @@
     "unittest2_18": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -5273,6 +5504,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -5301,6 +5533,7 @@
     "unittest2_19": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -5308,6 +5541,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -5336,6 +5570,7 @@
     "unittest2_2": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -5345,6 +5580,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -5375,12 +5611,14 @@
     "unittest2_20": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "chronos",
@@ -5408,12 +5646,14 @@
     "unittest2_21": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "testutils",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "testutils",
@@ -5441,11 +5681,13 @@
     "unittest2_22": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "faststreams",
           "nixpkgs"
@@ -5472,10 +5714,12 @@
     "unittest2_23": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "snappy",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "snappy",
           "nixpkgs"
         ],
@@ -5501,6 +5745,7 @@
     "unittest2_3": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -5508,6 +5753,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -5536,12 +5782,14 @@
     "unittest2_4": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronicles",
           "json_serialization",
           "serialization",
@@ -5569,11 +5817,13 @@
     "unittest2_5": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronos",
           "bearssl",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronos",
           "bearssl",
           "nixpkgs"
@@ -5600,11 +5850,13 @@
     "unittest2_6": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronos",
           "httputils",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronos",
           "httputils",
           "nixpkgs"
@@ -5631,10 +5883,12 @@
     "unittest2_7": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "chronos",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "chronos",
           "nixpkgs"
         ],
@@ -5660,6 +5914,7 @@
     "unittest2_8": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -5668,6 +5923,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -5697,6 +5953,7 @@
     "unittest2_9": {
       "inputs": {
         "flakeNimbleLib": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
@@ -5705,6 +5962,7 @@
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "eth_p2p-master",
           "json_serialization",
           "serialization",
           "faststreams",
